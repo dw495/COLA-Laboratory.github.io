@@ -398,11 +398,12 @@ select {
 }
 
 .logo__title {
-	font-size: 64px;
-	font-size: 3rem;
+	font-size: 80px;
+	font-size: 4rem;
 	font-weight: 700;
 	line-height: 1;
 	color: #000;
+	/*font-family: 'Lobster', cursive;*/
 }
 
 .logo__tagline {
@@ -1097,6 +1098,48 @@ textarea {
 
 .footer__copyright a:hover {
 	text-decoration: underline;
+}
+
+/*** Research Page ***/
+/**h3.publications__year {
+	font-size: 1.4rem;
+}**/
+
+ul.publications__list {
+	margin-left: 0;
+	padding-left: 20px;
+	border-left: 2px #2a2a2a solid;
+	list-style: none;
+}
+
+.publications__authors {
+	font-size: 1rem;
+	margin-bottom: 2px;
+}
+
+.publications__title {
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.publications__journal {
+	font-style: italic;
+	font-size: 1rem;
+	margin-bottom: 10px;
+}
+
+ul.publications__list li {
+	margin-bottom: 40px;
+}
+
+ul.publications__list li:last-child {
+	margin-bottom: 80px;
+}
+
+.publications__links *  {
+	font-size: 1.5rem;
+	margin-right: 5px;
 }
 
 /*** Media Queries ***/
