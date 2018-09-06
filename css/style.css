@@ -327,6 +327,7 @@ sub {
 
 sup {
 	vertical-align: super;
+	line-height: 0;
 }
 
 sub {
@@ -1101,12 +1102,45 @@ textarea {
 }
 
 /*** Research Page ***/
-/**h3.publications__year {
-	font-size: 1.4rem;
-}**/
+.publications__key {
+	text-align: left;
+	margin-left: 0px !important;
+	margin-bottom: 28px;
+	margin-bottom: 1.75rem;
+}
+
+.publications__key > * {
+	display:inline-block;
+	padding:0 8px 0 8px;
+	padding:0 .5rem 0 .5rem;
+}
+
+.publications__cola_member { 
+	padding-left: 0;
+	text-decoration: underline;
+}
+
+.publications__journal {
+	background-color: #ddf;
+	display: inline-block;
+	padding:0 8px 0 8px;
+	padding:0 .5rem 0 .5rem;
+}
+
+.publications__conference {
+	background-color: #bfb;
+	display: inline-block;
+	padding:0 8px 0 8px;
+	padding:0 .5rem 0 .5rem;
+}
+
+.publications__year {
+	float: left;
+}
 
 ul.publications__list {
-	margin-left: 0;
+	/** 1.25 rem for each character in the year. Remember to update if this code lasts ~8000 years **/
+	margin-left: 5rem;
 	padding-left: 20px;
 	border-left: 2px #2a2a2a solid;
 	list-style: none;
@@ -1114,7 +1148,7 @@ ul.publications__list {
 
 .publications__authors {
 	font-size: 1rem;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
 }
 
 .publications__title {
@@ -1123,7 +1157,11 @@ ul.publications__list {
 	margin-bottom: 8px;
 }
 
-.publications__journal {
+.publications__title a {
+	color: #2a2a2a;
+}
+
+.publications__destination {
 	font-style: italic;
 	font-size: 1rem;
 	margin-bottom: 10px;
@@ -1140,6 +1178,31 @@ ul.publications__list li:last-child {
 .publications__links *  {
 	font-size: 1.5rem;
 	margin-right: 5px;
+	color: #5e5c5c;
+}
+
+.publications__links *:hover {
+	color: #e64946
+}
+
+.publications__letter {
+	width:20px;
+	height:20px;
+	width:1.3rem;
+	height:1.3rem;
+	display:inline-block;
+	text-align: center;
+	line-height: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+	.publications__year {
+		float: none;
+	}
+
+	ul.publications__list {
+		margin-left: 0rem;
+	}
 }
 
 /*** Media Queries ***/
