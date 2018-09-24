@@ -1,0 +1,84 @@
+/* CSS Document */
+.member {
+ border:solid 3px #f9f9f9;
+ background-color:rgba(255,255,255,0.67);
+ padding:.25em 1em;
+ max-width:440px;
+ min-width:280px;
+ width:40%;
+ box-shadow:3px 3px 3px #aaa;
+ display:inline-block;
+ min-height:8.5em;
+ margin-right:1.5em;
+ margin-bottom:1em;
+ float:left
+}
+.contactimg,.member img {
+ float:right;
+ border:solid 4px #fff;
+ outline:solid 1px #ddd;
+ margin-top:.75em;
+ height:6em;
+ margin-left:5px
+}
+#alumni .member img {
+ -webkit-filter:grayscale(1);
+ filter:grayscale(1)
+}
+.member .name {
+ font-weight:normal;
+ margin-bottom:-2px
+}
+.member .date {
+ font-weight:normal;
+ margin-top:.75em
+}
+.member .role {
+ font-weight:normal;
+ font-size:80%;
+ margin-bottom:5px
+}
+.member .uni:before {
+ content:url("../images/uni.png");
+ padding-left:.5em;
+ padding-right:.5em
+}
+.member .home:before {
+ content:url("../images/home.png");
+ padding-left:.5em;
+ padding-right:.5em
+}
+.member .email:before {
+ content:url("../images/email.png");
+ padding-left:.5em;
+ padding-right:.5em;
+ border-bottom:1px solid transparent
+}
+.member:after {
+ clear:both
+}
+a.pub {
+ border-radius:.25em;
+ background-color:#8D809D;
+ color:white;
+ padding:.0em .2em;
+ margin-right:.25em;
+ line-height:1.25;
+ box-shadow:2px 2px 2px rgba(0,0,0,.5)
+}
+a.pub:hover {
+ color:black
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
